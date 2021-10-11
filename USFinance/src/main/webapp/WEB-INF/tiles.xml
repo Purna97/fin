@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	  <definition name="base.definition" template="/common/common_layout/layout.jsp">
+		<put-attribute name="header" value="/common/header.jsp" />
+		<put-attribute name="left_bar" value="/common/leftbar.jsp" />
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="" />
+		<put-list-attribute name="cssitems"></put-list-attribute>
+		<put-list-attribute name="jsitems"></put-list-attribute>
+	   </definition>
+              <definition name="invoicegen" extends="base.definition">
+              <put-attribute name="body" value="/Pages/Invoice.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+       <definition name="expensegen" extends="base.definition">
+              <put-attribute name="body" value="/Pages/Expense.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+           <definition name="addemp" extends="base.definition">
+              <put-attribute name="body" value="/Pages/AddEmployee.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+           <definition name="addcust" extends="base.definition">
+              <put-attribute name="body" value="/Pages/AddCustomer.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+         <definition name="products" extends="base.definition">
+              <put-attribute name="body" value="/Pages/ProductsnServices.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+        <definition name="reports" extends="base.definition">
+              <put-attribute name="body" value="/Pages/GenerateReport.jsp" />
+              <put-list-attribute name="cssitems"></put-list-attribute>
+              <put-list-attribute name="jsitems"></put-list-attribute>
+       </definition>
+       
+       
+</tiles-definitions>
